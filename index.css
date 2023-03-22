@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+
+}
+
+.logo{
+  width: 100%;
+  border-top: 0;
+  margin-top: 0;
+  
+}
+
+header{
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.botao{
+  padding: 10px 20px;
+  margin: 10px 20px;
+  background-color: #8d2796;
+  border-radius: 20pt;
+  cursor: pointer;
+}
+
+.botao:hover{
+  padding: 13px 23px;
+  transition: .5s;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.insta a{
+  font-family: 'Tiro Devanagari Hindi', serif;
+  font-size: 15pt;
+  color: black;
+}
+
+@media (max-width: 800px){
+  .logo{
+    width: auto;
+    height: 250px;
+    background-color: #8d2796;
+    margin-bottom: 50px;
+  }
+  .header{
+    height: 50%;
+    background-color: #ffffff;
+  }
+  .botao{
+    margin-top: 20px;
+  }
+  
+}
