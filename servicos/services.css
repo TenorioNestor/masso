@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(46,45,77);
+    background: linear-gradient(90deg, rgba(46,45,77,1) 0%, rgba(203,72,183,1) 100%);
+}
+.foto{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: 20px;
+
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.topo a{
+    color: #fff;
+    margin: 50% 20px;
+    text-decoration: none;
+    font-family: 'Recursive';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.links{
+
+    margin: auto 100px auto 20px;
+}
+
+.servicos h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  .tipos{
+    height: 300px;
+    margin: 0 0 80px 0;
+    padding: 0 ;
+    display: grid;
+    grid-template-rows: 300px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .titulo{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16pt;
+  }
+  .card{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #994096;
+    padding: 10px;
+  }
+  .card span{
+    font-size: 12pt;
+  }
+  .card img{
+    width: 177px;
+    height: 140px;
+    border-radius: 10px;
+    margin-right: 10px;
+    
+  }
+
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    width: 500px;
+    height: 300px;
+    background: #994096;
+        border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    width: 500px;
+    height: 300px;
+    background: #994096;
+        border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    width: 500px;
+    height: 300px;
+    background: #994096;
+        border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+    width: 500px;
+    height: 300px;
+    background: #994096;
+        border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  div.item:nth-of-type(5) {
+    --offset: 5;
+    width: 500px;
+    height: 300px;
+    background: #994096;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+  input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+  }
+
+@media only screen and (max-width: 800px) {
+    body {
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
