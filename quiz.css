@@ -1,0 +1,22 @@
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botao button{
+    padding: 10px;
+    background: rgb(46,45,77);
+    background: linear-gradient(90deg, rgba(46,45,77,1) 0%, rgba(203,72,183,1) 100%);
+    margin: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-indent: bold;
+    box-shadow: none;
+    border: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Source Serif Pro', serif;
+}
